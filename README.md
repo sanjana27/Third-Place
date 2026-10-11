@@ -12,6 +12,23 @@ person accepts.
 For cafes, the idea is to make their existing space a place for communities,
 conversation, and small gatherings, not just transactions.
 
+## Live prototype
+
+**[Open Third Place](https://third-place-648263923127.asia-south2.run.app)**
+
+1. Choose **Try the fictional demo** to explore as Riya.
+2. Ask **"I want to discuss AI and startups over coffee now."** Review the
+   interpreted intent, then choose **Find my people**.
+3. Ask Samir for an introduction, review the message, and send it. Choose
+   **Switch to Samir to respond**, then accept or decline.
+4. Reload the page. The introduction and connection state are saved in
+   PostgreSQL, not simulated in browser storage.
+
+You can also ask for a small group, switch fictional identities, change
+discovery consent, or create a scoped API token under **For assistants**.
+The deployment uses real Gemini 3.8 Flash, Cloud SQL for PostgreSQL 17, and
+Cloud Run. Availability depends on the hackathon cloud project remaining active.
+
 ## Submission demo
 
 - [Watch or download the 59.5-second concept video](video/output/third-place-teaser.mp4)
@@ -35,13 +52,14 @@ official integration with an existing assistant.
   gatherings, consent, sessions, introductions, and connections.
 - Fictional demo identities, explicit opt-in controls, actor-bound assistant
   tokens, and separate request and acceptance steps.
-- A Dockerfile and Google Cloud SQL connector integration for the intended
-  Google Cloud Run deployment.
+- A Dockerfile and Google Cloud SQL connector integration for the live
+  Google Cloud Run deployment, with its database password in Secret Manager.
 
-**Status:** This is an in-progress hackathon prototype. The application source
-and concept video are available here. A public live application and a complete
-deployed end-to-end demonstration are not yet available. All seeded profiles,
-cafes, availability, and gatherings are fictional.
+**Status:** A deployed hackathon prototype, not a production social network or
+production identity system. The live demo performs real Gemini requests and
+stores discovery, consent, introductions, and connections in PostgreSQL.
+All seeded profiles, cafes, availability, and gatherings are fictional and
+do not represent real people currently present.
 
 ## Architecture
 
@@ -85,12 +103,30 @@ Open `http://localhost:8080`. The server applies the schema on startup when
 
 For development, run `npm run dev` and `npm run dev:web` in separate terminals.
 
+## Run the checks
+
+```powershell
+npm run check
+npm test
+$env:TEST_BASE_URL = 'https://third-place-648263923127.asia-south2.run.app'
+npm run test:e2e
+```
+
+The API tests use a real configured PostgreSQL database and an explicitly
+labeled AI test double to exercise consent, identity isolation, expiration,
+and group capacity. They create isolated fictional worlds and clean up their
+own data. Without database configuration, the database suite reports skipped.
+The browser test uses the real Gemini-backed application and verifies accepted
+and declined requests after reload, including the mobile layout. On Windows it
+uses installed Microsoft Edge; on other platforms it uses Playwright Chromium.
+
 ## API entry points
 
 The running server exposes its API description at `/openapi.json`.
 
 | Endpoint | Purpose |
 | --- | --- |
+| `GET /api/health` | Check application and PostgreSQL readiness |
 | `POST /api/v1/demo/session` | Start an isolated fictional demo |
 | `POST /api/v1/intents` | Interpret a request with Gemini |
 | `POST /api/v1/discoveries` | Discover eligible matches after intent confirmation |
