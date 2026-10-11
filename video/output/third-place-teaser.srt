@@ -1,0 +1,51 @@
+1
+00:00:00,650 --> 00:00:03,607
+The people you'd love to meet
+
+2
+00:00:03,607 --> 00:00:07,550
+might already be sitting in the same café.
+
+3
+00:00:08,550 --> 00:00:14,200
+What if you could simply ask your personal assistant?
+
+4
+00:00:15,550 --> 00:00:18,329
+Third Place turns that intent into possibility.
+
+5
+00:00:18,329 --> 00:00:24,350
+It finds shared interests among people who've opted in at the same café.
+
+6
+00:00:25,650 --> 00:00:29,345
+A little context. A familiar interest.
+
+7
+00:00:29,345 --> 00:00:32,424
+And a conversation worth starting.
+
+8
+00:00:32,424 --> 00:00:37,350
+What's an AI product you wish you'd built?
+
+9
+00:00:38,650 --> 00:00:43,229
+You choose to request an introduction. They choose to accept.
+
+10
+00:00:43,229 --> 00:00:47,350
+Only then do you connect. Always by mutual consent.
+
+11
+00:00:48,400 --> 00:00:51,225
+The assistant is the interface.
+
+12
+00:00:51,225 --> 00:00:54,050
+Third Place is the connection infrastructure.
+
+13
+00:00:54,600 --> 00:00:59,100
+Your assistant. Your people. Your world.

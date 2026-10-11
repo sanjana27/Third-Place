@@ -1,0 +1,13 @@
+.git
+.agents
+.github
+.hackathon
+.env
+.env.*
+node_modules
+dist
+video
+tests
+test-results
+playwright-report
+*.log

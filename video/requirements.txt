@@ -1,0 +1,3 @@
+# Already available locally at creation time; no install is needed on this machine.
+Pillow==12.2.0
+numpy==2.5.0

@@ -1,0 +1,78 @@
+{
+  "title": "Third Place",
+  "tagline": "Your assistant. Your people. Your world.",
+  "duration": 59.5,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "voice": "Microsoft Zira",
+  "voice_rate": -1,
+  "disclaimer": "Scripted demo · fictional profiles",
+  "question": "Anyone nearby interested in AI startups over coffee?",
+  "opener": "What's an AI product you wish you'd built?",
+  "opener_display": "What's an AI product\nyou wish you'd built?",
+  "narration": [
+    {
+      "start": 0.65,
+      "end": 7.55,
+      "text": "The people you'd love to meet might already be sitting in the same café.",
+      "captions": [
+        "The people you'd love to meet",
+        "might already be sitting in the same café."
+      ]
+    },
+    {
+      "start": 8.55,
+      "end": 14.2,
+      "text": "What if you could simply ask your personal assistant?",
+      "captions": [
+        "What if you could simply ask your personal assistant?"
+      ]
+    },
+    {
+      "start": 15.55,
+      "end": 24.35,
+      "text": "{title} turns that intent into possibility. It finds shared interests among people who've opted in at the same café.",
+      "captions": [
+        "{title} turns that intent into possibility.",
+        "It finds shared interests among people who've opted in at the same café."
+      ]
+    },
+    {
+      "start": 25.65,
+      "end": 37.35,
+      "text": "A little context. A familiar interest. And a conversation worth starting. What's an A I product you wish you'd built?",
+      "captions": [
+        "A little context. A familiar interest.",
+        "And a conversation worth starting.",
+        "What's an AI product you wish you'd built?"
+      ]
+    },
+    {
+      "start": 38.65,
+      "end": 47.35,
+      "text": "You choose to request an introduction. They choose to accept. Only then do you connect. Always by mutual consent.",
+      "captions": [
+        "You choose to request an introduction. They choose to accept.",
+        "Only then do you connect. Always by mutual consent."
+      ]
+    },
+    {
+      "start": 48.4,
+      "end": 54.05,
+      "text": "The assistant is the interface. {title} is the connection infrastructure.",
+      "captions": [
+        "The assistant is the interface.",
+        "{title} is the connection infrastructure."
+      ]
+    },
+    {
+      "start": 54.6,
+      "end": 59.1,
+      "text": "Your assistant. Your people. Your world.",
+      "captions": [
+        "Your assistant. Your people. Your world."
+      ]
+    }
+  ]
+}

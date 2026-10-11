@@ -1,0 +1,9 @@
+.hackathon/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+dist/
+test-results/
+playwright-report/
